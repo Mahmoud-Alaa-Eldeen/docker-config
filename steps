@@ -11,3 +11,4 @@ docker-compose up -d   "-d" to run the command in background and not show log
 
 when need to start the docker type:  docker-compose up -d
 when need to restart the docker type:  
+to see the running images on docker: docker ps
