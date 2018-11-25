@@ -1,0 +1,13 @@
+make a new directory like test and create a new one inside it called addons and put the .yml next to addons directory.
+
+change in the .yml file as you need
+
+if not installed docker and compose:
+install docker from (step 1, 2 only):   https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+install compose from (step1 only):  https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04
+
+open the directory that contains .yml file in the terminal and type:
+docker-compose up -d   "-d" to run the command in background and not show log
+
+when need to start the docker type:  docker-compose up -d
+when need to restart the docker type:  

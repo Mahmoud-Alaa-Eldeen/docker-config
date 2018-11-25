@@ -1,0 +1,36 @@
+version: '2'
+services:
+  odoo:
+    image: odoo:11.0
+    restart: always
+    depends_on:
+      - db
+    volumes:
+      - odoo-pm-web-data:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
+    ports:
+      - 8086:8069
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+  db:
+    image: postgres:9.6
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - odoo-pm-db-data:/var/lib/postgresql/data/pgdata
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+
+volumes:
+  odoo-pm-web-data:
+  odoo-pm-db-data:
+
