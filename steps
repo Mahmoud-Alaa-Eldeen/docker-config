@@ -10,5 +10,5 @@ open the directory that contains .yml file in the terminal and type:
 docker-compose up -d   "-d" to run the command in background and not show log
 
 when need to start the docker type:  docker-compose up -d
-when need to restart the docker type:  
+when need to restart the docker type:  docker restart img_name
 to see the running images on docker: docker ps
