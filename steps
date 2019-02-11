@@ -12,3 +12,8 @@ docker-compose up -d   "-d" to run the command in background and not show log
 when need to start the docker type:  docker-compose up -d
 when need to restart the docker type:  docker restart img_name
 to see the running images on docker: docker ps
+
+
+exec commands on docker:
+
+docker exec -u 0 -ti  odoo10_odoo_1 bash
