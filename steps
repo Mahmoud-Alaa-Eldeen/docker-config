@@ -17,3 +17,9 @@ to see the running images on docker: docker ps
 exec commands on docker:
 
 docker exec -u 0 -ti  odoo10_odoo_1 bash
+
+
+enter on docker:
+docker ps  and know the docker id image
+docker exec -it --user root docker_id  bash
+
