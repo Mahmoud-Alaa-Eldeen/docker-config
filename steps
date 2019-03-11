@@ -23,3 +23,7 @@ enter on docker:
 docker ps  and know the docker id image
 docker exec -it --user root docker_id  bash
 
+
+move docker image to another host:
+https://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-using-a-repository
+
